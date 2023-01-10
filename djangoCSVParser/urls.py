@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from csv_parser.views import IndexView
-from prolog_module.views import prolog
+from prolog_module.views import prolog_main
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('index/', IndexView.as_view(), name='index'),
-    path('', prolog, name='prolog')
+    path('', prolog_main, name='prolog')
 ]

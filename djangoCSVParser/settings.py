@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #my_apps
     'csv_parser',
+    'prolog_module',
 ]
 
 MIDDLEWARE = [
